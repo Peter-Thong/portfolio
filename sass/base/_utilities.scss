@@ -1,0 +1,35 @@
+.title-center {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+
+  &-sub1 {
+    top: 35%;
+  }
+
+  &-sub2 {
+    top: 43%;
+  }
+}
+
+.book-page-center {
+  margin: 15rem 7rem;
+}
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+.space-top-little {
+  margin-top: 2rem;
+}
+.space-top-medium {
+  margin-top: 5rem;
+}
+
+.text-center {
+  text-align: center;
+}

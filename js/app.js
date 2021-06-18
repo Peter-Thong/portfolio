@@ -4,7 +4,7 @@ document.addEventListener("scroll", () => {
   const b = document.body;
   const h = document.documentElement;
   const book = document.querySelector(".book");
-  const page1 = document.querySelector(".book__page--1");
+  const coverFront = document.querySelector(".book__cover--front");
   const page2 = document.querySelector(".book__page--2");
   const page4 = document.querySelector(".book__page--4");
   const page6 = document.querySelector(".book__page--6");
@@ -13,20 +13,20 @@ document.addEventListener("scroll", () => {
   let percent = ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100;
 
   if (percent > 10) {
-    if (!page1.classList.contains("flip1")) {
+    if (!coverFront.classList.contains("flip1")) {
       book.style.transform = "translateX(0%)";
-      page1.classList.add("flip1");
+      coverFront.classList.add("flip1");
     }
   } else {
-    page1.classList.remove("flip1");
-    page1.style.zIndex = "10";
+    coverFront.classList.remove("flip1");
+    coverFront.style.zIndex = "10";
     book.style.transform = "translateX(-25%)";
   }
 
   if (percent > 30) {
     if (!page2.classList.contains("flip2")) {
       page2.classList.add("flip2");
-      page1.style.zIndex = "-10";
+      coverFront.style.zIndex = "-10";
     }
   } else {
     page2.classList.remove("flip2");

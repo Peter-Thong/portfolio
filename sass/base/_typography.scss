@@ -1,0 +1,56 @@
+.book-cover-title {
+  font-family: "Libre Baskerville", serif;
+  font-size: 6.2rem;
+  font-weight: 400;
+  color: #bebaa2;
+  letter-spacing: 0.5rem;
+}
+
+.book-cover-sub {
+  font-family: "Lovers Quarrel", cursive;
+  font-size: 5.4rem;
+  font-weight: 400;
+  color: #bebaa2;
+}
+
+.heading-primary {
+  font-family: "Libre Baskerville", serif;
+  font-size: 4.8rem;
+  // font-weight: bold;
+  color: #bebaa2;
+  line-height: 7rem;
+  letter-spacing: 0.5rem;
+}
+.heading-secondary {
+  font-family: "Libre Baskerville", serif;
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: #bebaa2;
+  line-height: 7rem;
+  // letter-spacing: 0.5rem;
+}
+
+.paragraph {
+  &-headline {
+    font-family: "Libre Baskerville", serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba($color: #bebaa2, $alpha: 0.8);
+    word-spacing: 0.2rem;
+  }
+
+  &-content {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #bebaa2;
+    line-height: 3rem;
+  }
+}
+.button-text {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: $page-color;
+  line-height: 7rem;
+}

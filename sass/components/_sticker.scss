@@ -1,0 +1,85 @@
+.sticker {
+  will-change: transform;
+  height: 140px;
+  width: 140px;
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    box-shadow: -2px 2px 10px 8px rgba(0, 0, 0, 0.22);
+    border-radius: 50%;
+  }
+  &-container {
+    display: inline-block;
+    position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 2rem auto;
+    &:hover .sticker-inner {
+      clip-path: polygon(84px 0px, 100% 56px, 100% 100%, 0px 100%, 0px 0px);
+    }
+    &:hover .sticker-backdrop {
+      transform: translate(84px, -84px);
+    }
+
+    transition: all 0.5s ease-in;
+  }
+
+  &-inner {
+    height: 100%;
+    width: 100%;
+    clip-path: polygon(99.4px 0px, 100% 40.6px, 100% 100%, 0px 100%, 0px 0px);
+    overflow: hidden;
+    position: relative;
+    background: hsla(186, 33%, 94%, 1);
+
+    background: linear-gradient(
+      90deg,
+      hsla(186, 33%, 94%, 1) 0%,
+      hsla(216, 41%, 79%, 1) 100%
+    );
+
+    background: -moz-linear-gradient(
+      90deg,
+      hsla(186, 33%, 94%, 1) 0%,
+      hsla(216, 41%, 79%, 1) 100%
+    );
+
+    background: -webkit-linear-gradient(
+      90deg,
+      hsla(186, 33%, 94%, 1) 0%,
+      hsla(216, 41%, 79%, 1) 100%
+    );
+    border-radius: 50%;
+    transition: all 0.5s ease-in;
+  }
+
+  &-backdrop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    transform: translate(99.4px, -99.4px);
+    transition: all 0.5s ease-in;
+  }
+
+  &-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
