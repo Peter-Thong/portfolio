@@ -81,5 +81,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    & > span:after {
+      content: "";
+      background-image: url(../assets/img/curved-arrow.png);
+      height: 20px;
+      width: 60px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -130%);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
 }

@@ -21,13 +21,21 @@
   line-height: 7rem;
   letter-spacing: 0.5rem;
 }
+
+.big-bold-text {
+  font-size: 5.2rem;
+  font-weight: bold;
+  color: #bebaa2;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+
 .heading-secondary {
   font-family: "Libre Baskerville", serif;
   font-size: 3.6rem;
   font-weight: bold;
   color: #bebaa2;
-  line-height: 7rem;
-  // letter-spacing: 0.5rem;
+  line-height: 5rem;
 }
 
 .paragraph {

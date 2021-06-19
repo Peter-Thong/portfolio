@@ -37,12 +37,19 @@ body {
   line-height: 7rem;
   letter-spacing: 0.5rem; }
 
+.big-bold-text {
+  font-size: 5.2rem;
+  font-weight: bold;
+  color: #bebaa2;
+  text-transform: uppercase;
+  letter-spacing: 0.8rem; }
+
 .heading-secondary {
   font-family: "Libre Baskerville", serif;
   font-size: 3.6rem;
   font-weight: bold;
   color: #bebaa2;
-  line-height: 7rem; }
+  line-height: 5rem; }
 
 .paragraph-headline {
   font-family: "Libre Baskerville", serif;
@@ -149,6 +156,18 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center; }
+    .sticker-content > span:after {
+      content: "";
+      background-image: url(../assets/img/curved-arrow.png);
+      height: 20px;
+      width: 60px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -130%);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
 
 header .overlay {
   position: fixed;
@@ -279,3 +298,15 @@ header .overlay {
   position: absolute;
   bottom: 0;
   background-blend-mode: screen; }
+
+.projects {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0rem 0rem 15rem;
+  text-align: left; }
+  .projects-headline {
+    position: absolute;
+    top: 28%;
+    left: 0;
+    transform-origin: 0 100%;
+    transform: translateY(-100%) rotate(90deg); }
