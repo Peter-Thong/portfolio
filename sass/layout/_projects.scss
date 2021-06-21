@@ -13,7 +13,7 @@
   }
 }
 
-.wrapper {
+.img-wrapper {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(2, 1fr);
@@ -29,16 +29,29 @@
   background-size: cover;
 }
 
-.news-item {
+.img-item {
   display: inline-block;
-  min-height: 400px;
+  min-height: 200px;
   width: 50%;
 }
 
 @supports (display: grid) {
-  .news-item {
+  .img-item {
     width: auto;
     min-height: 0;
+  }
+  .hero-item {
+    background-image: url(../assets/img/projects/fur-hero.PNG);
+  }
+
+  .standard-item:nth-child(2) {
+    background-image: url(../assets/img/projects/fur-living.PNG);
+  }
+  .standard-item:nth-child(3) {
+    background-image: url(../assets/img/projects/fur-products.PNG);
+  }
+  .standard-item:nth-child(4) {
+    background-image: url(../assets/img/projects/fur-details.PNG);
   }
 
   .hero-item {
