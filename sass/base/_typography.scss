@@ -5,6 +5,9 @@
   color: #bebaa2;
   letter-spacing: 0.5rem;
 }
+// #FFF2E9
+
+// #bebaa2
 
 .book-cover-sub {
   font-family: "Lovers Quarrel", cursive;
@@ -54,6 +57,12 @@
     color: #bebaa2;
     line-height: 3rem;
   }
+
+  &-icon {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
 }
 .button-text {
   font-family: "Libre Baskerville", serif;
@@ -61,4 +70,8 @@
   font-weight: 400;
   color: $page-color;
   line-height: 7rem;
+}
+
+.list--keys {
+  list-style-type: none;
 }
