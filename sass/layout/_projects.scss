@@ -11,6 +11,13 @@
     transform-origin: 0 100%;
     transform: translateY(-100%) rotate(90deg);
   }
+
+  &-showcase-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 
 .img-wrapper {
