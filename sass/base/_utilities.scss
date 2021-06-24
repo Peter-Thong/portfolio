@@ -33,3 +33,11 @@ a:hover {
 .text-center {
   text-align: center;
 }
+
+.btn-center-bottom{
+      position: absolute;
+    bottom: 20%;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 2rem auto;
+}

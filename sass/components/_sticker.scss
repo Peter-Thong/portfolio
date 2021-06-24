@@ -17,11 +17,6 @@
   }
   &-container {
     display: inline-block;
-    position: absolute;
-    bottom: 20%;
-    right: 50%;
-    transform: translateX(50%);
-    margin: 2rem auto;
     &:hover .sticker-inner {
       clip-path: polygon(84px 0px, 100% 56px, 100% 100%, 0px 100%, 0px 0px);
     }

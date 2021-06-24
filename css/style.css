@@ -107,6 +107,13 @@ a:hover {
 .text-center {
   text-align: center; }
 
+.btn-center-bottom {
+  position: absolute;
+  bottom: 20%;
+  right: 50%;
+  transform: translateX(50%);
+  margin: 2rem auto; }
+
 .sticker {
   will-change: transform;
   height: 140px;
@@ -124,11 +131,6 @@ a:hover {
     border-radius: 50%; }
   .sticker-container {
     display: inline-block;
-    position: absolute;
-    bottom: 20%;
-    right: 50%;
-    transform: translateX(50%);
-    margin: 2rem auto;
     transition: all 0.5s ease-in; }
     .sticker-container:hover .sticker-inner {
       clip-path: polygon(84px 0px, 100% 56px, 100% 100%, 0px 100%, 0px 0px); }
@@ -322,7 +324,9 @@ header .overlay {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%; }
+    width: 100%;
+    margin-top: 10rem;
+    margin-left: -5rem; }
 
 .img-wrapper {
   display: grid;
